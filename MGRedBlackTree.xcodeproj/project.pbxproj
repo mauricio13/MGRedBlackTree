@@ -1,0 +1,226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2293DBE9153637F000A3E42E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2293DBE8153637F000A3E42E /* CoreFoundation.framework */; };
+		2293DBEC153637F000A3E42E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2293DBEB153637F000A3E42E /* main.c */; };
+		2293DBEE153637F000A3E42E /* MGRedBlackTree.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2293DBED153637F000A3E42E /* MGRedBlackTree.1 */; };
+		2293DC111536389D00A3E42E /* MGRedBlackTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 2293DC101536389D00A3E42E /* MGRedBlackTree.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2293DBE2153637F000A3E42E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				2293DBEE153637F000A3E42E /* MGRedBlackTree.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2293DBE4153637F000A3E42E /* MGRedBlackTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MGRedBlackTree; sourceTree = BUILT_PRODUCTS_DIR; };
+		2293DBE8153637F000A3E42E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2293DBEB153637F000A3E42E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2293DBED153637F000A3E42E /* MGRedBlackTree.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MGRedBlackTree.1; sourceTree = "<group>"; };
+		2293DC0F1536388C00A3E42E /* MGRedBlackTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGRedBlackTree.h; sourceTree = "<group>"; };
+		2293DC101536389D00A3E42E /* MGRedBlackTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MGRedBlackTree.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2293DBE1153637F000A3E42E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2293DBE9153637F000A3E42E /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2293DBD9153637EF00A3E42E = {
+			isa = PBXGroup;
+			children = (
+				2293DBEA153637F000A3E42E /* MGRedBlackTree */,
+				2293DBE7153637F000A3E42E /* Frameworks */,
+				2293DBE5153637F000A3E42E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2293DBE5153637F000A3E42E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2293DBE4153637F000A3E42E /* MGRedBlackTree */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2293DBE7153637F000A3E42E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2293DBE8153637F000A3E42E /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2293DBEA153637F000A3E42E /* MGRedBlackTree */ = {
+			isa = PBXGroup;
+			children = (
+				2293DBEB153637F000A3E42E /* main.c */,
+				2293DC0F1536388C00A3E42E /* MGRedBlackTree.h */,
+				2293DC101536389D00A3E42E /* MGRedBlackTree.c */,
+				2293DBED153637F000A3E42E /* MGRedBlackTree.1 */,
+			);
+			path = MGRedBlackTree;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2293DBE3153637F000A3E42E /* MGRedBlackTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2293DBF1153637F000A3E42E /* Build configuration list for PBXNativeTarget "MGRedBlackTree" */;
+			buildPhases = (
+				2293DBE0153637F000A3E42E /* Sources */,
+				2293DBE1153637F000A3E42E /* Frameworks */,
+				2293DBE2153637F000A3E42E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGRedBlackTree;
+			productName = MGRedBlackTree;
+			productReference = 2293DBE4153637F000A3E42E /* MGRedBlackTree */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2293DBDB153637EF00A3E42E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2293DBDE153637EF00A3E42E /* Build configuration list for PBXProject "MGRedBlackTree" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2293DBD9153637EF00A3E42E;
+			productRefGroup = 2293DBE5153637F000A3E42E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2293DBE3153637F000A3E42E /* MGRedBlackTree */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2293DBE0153637F000A3E42E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2293DBEC153637F000A3E42E /* main.c in Sources */,
+				2293DC111536389D00A3E42E /* MGRedBlackTree.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2293DBEF153637F000A3E42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2293DBF0153637F000A3E42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2293DBF2153637F000A3E42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2293DBF3153637F000A3E42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2293DBDE153637EF00A3E42E /* Build configuration list for PBXProject "MGRedBlackTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2293DBEF153637F000A3E42E /* Debug */,
+				2293DBF0153637F000A3E42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2293DBF1153637F000A3E42E /* Build configuration list for PBXNativeTarget "MGRedBlackTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2293DBF2153637F000A3E42E /* Debug */,
+				2293DBF3153637F000A3E42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2293DBDB153637EF00A3E42E /* Project object */;
+}
