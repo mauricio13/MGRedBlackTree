@@ -39,12 +39,10 @@ typedef void (*MGRedBlackTreeReleaseFunction)(void *elemAddr);
 typedef int (*MGRedBlackTreeCompareFunction)(const void *elemAddr1, const void *elemAddr);
 
 
-
-
-
 typedef struct MGRedBlackTree {
     short color;
     void *data;
+    struct MGRedBlackTree *root;
     struct MGRedBlackTree *parent;
     struct MGRedBlackTree *left_child;
     struct MGRedBlackTree *right_child;
@@ -52,6 +50,12 @@ typedef struct MGRedBlackTree {
     MGRedBlackTreeRetainFunction retainfn;
     MGRedBlackTreeCompareFunction comparefn;
 } MGRedBlackTree;
+
+// Create set of specialized functions for this structure
+typedef struct MGRedBlackTreeHandle {
+    MGRedBlackTree *root;
+    
+} MGRedBlackTreeHandle;
 
 /**
  * Type: MGRedBlackTreeCompareFunction
@@ -80,6 +84,7 @@ MGRedBlackTree *root;
  */
 
 MGRedBlackTree * MGRedBlackTreeCreate(void *data, MGRedBlackTreeCompareFunction comparefn, MGRedBlackTreeReleaseFunction releasefn, MGRedBlackTreeRetainFunction retainfn);
+
 
 /**
  * Function:MGRedBlackTreeRelease

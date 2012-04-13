@@ -18,10 +18,15 @@ int comp(const void * elem1, const void * elem2)
     return 1;
     
 }
+void MGRedBlackTreeLeftRotate(MGRedBlackTreeHandle *handle, MGRedBlackTree *rbt);
 
 void map(MGRedBlackTree *node, void *context)
 {
-    printf("%d\n", *(int*)node->data);
+    printf("node %d\n", *(int*)node->data);
+    //if (node->parent)printf("node parent %d\n", *(int*)node->parent->data);
+    //if (node->left_child)printf("node left_child %d\n", *(int*)node->left_child->data);
+    //if (node->right_child)printf("node right_child %d\n", *(int*)node->right_child->data);
+    
 }
 
 int main(int argc, const char * argv[])
@@ -53,6 +58,9 @@ int main(int argc, const char * argv[])
     node_6 = MGRedBlackTreeCreate(&data_6, intcmp, NULL, NULL);
     node_7 =MGRedBlackTreeCreate(&data_7, intcmp, NULL, NULL);
     
+    MGRedBlackTreeHandle handle;
+    handle.root = tree;
+    
     MGRedBlackTreeInsertElem(tree, node_2);
     MGRedBlackTreeInsertElem(tree, node_3);
     MGRedBlackTreeInsertElem(tree, node_4);
@@ -60,10 +68,15 @@ int main(int argc, const char * argv[])
     MGRedBlackTreeInsertElem(tree, node_6);
     MGRedBlackTreeInsertElem(tree, node_7);
     
-   
     
-    MGRedBlackTreeInorderTraversal(tree, NULL, map);
-    MGRedBlackTree *red_6 =  MGRedBlackTreeSearch(tree, &data_7);
+    MGRedBlackTreeInorderTraversal(handle.root, NULL, map);
+    MGRedBlackTreeLeftRotate(&handle,handle.root);
+    
+    MGRedBlackTreeInorderTraversal(handle.root, NULL, map);
+    
+    printf("tree value %d:\n", *(int*)tree->data);
+    
+    MGRedBlackTree *red_6 =  MGRedBlackTreeSearch(handle.root, &data_7);
     printf("red_6: %d \n", *(int*)red_6->data);
     MGRedBlackTreeRelease(tree);
     printf("Passed with merit\n");
